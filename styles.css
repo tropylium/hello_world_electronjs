@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Lato;
+    src: url("Lato/Lato-Regular.ttf");
+}
+
+body {
+    font-family: Lato, serif;
+}
+
+.outer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    height: fit-content;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.list {
+    width: fit-content;
+    height: fit-content;
+    background-color: lightgrey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list > * {
+    padding: 10px;
+}
+
+.list-title {
+    font-weight: bold;
+}
+
+.list-text {
+    background-color: white;
+    border-radius: inherit;
+    border-style: solid;
+    border-color: black;
+    transition: background-color;
+    transition-duration: 250ms;
+}
+
+.list-text:hover {
+    background-color: rgba(256, 256, 256, .7);
+}
+
+.message {
+    width: fit-content;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    display: block;
+    opacity: 1;
+    transition: none;
+}
+
+.message.hidden {
+    display: none;
+}
+
+.message.visually_hidden {
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+}

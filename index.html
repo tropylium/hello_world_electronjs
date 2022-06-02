@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="outer">
+        <div class="title" id="title">
+            <h1>Hello World!</h1>
+        </div>
+        <p>
+            Running versions:
+        </p>
+        <div class="list" id="node-list">
+            <div class="list-title">
+                Node.js
+            </div>
+            <div class="list-text">
+                <span id="node-version"></span>
+            </div>
+        </div>
+        <div class="list" id="chrome-list">
+            <div class="list-title">
+                Chromium
+            </div>
+            <div class="list-text">
+                <span id="chrome-version"></span>
+            </div>
+        </div>
+        <div class="list" id="electron-list">
+            <div class="list-title">
+                Electron
+            </div>
+            <div class="list-text">
+                <span id="electron-version"></span>
+            </div>
+        </div>
+
+        <div class ="message hidden visually_hidden" id="message">
+            Copied!
+        </div>
+    </div>
+
+</body>
+</html>
